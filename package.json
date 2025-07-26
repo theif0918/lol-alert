@@ -1,6 +1,6 @@
 {
   "name": "lol-alert",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "League of Legends-style alert/modal for web apps",
   "main": "lolAlert.js",
   "exports": {

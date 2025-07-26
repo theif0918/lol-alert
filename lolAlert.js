@@ -1,5 +1,5 @@
 // League of Legends-style Alert Modal
-// lolAlert.js v1.0.5
+// lolAlert.js v1.0.6
 
 (function (global, factory) {
   if (typeof module === "object" && typeof module.exports === "object") {
@@ -33,7 +33,7 @@
   border: 1px solid #8C7837;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   border-radius: 0;
-  padding: 24px 24px 64px;
+  padding: 24px 24px 0;
   min-width: 360px;
   max-width: 90vw;
   font-family: 'Noto Sans KR','Malgun Gothic','sans-serif';
@@ -46,7 +46,7 @@
   text-align: center;
 }
 .lol-alert-message {
-  margin: 0 0 32px;
+  margin: 0 0 16px;
   font-size: 0.9375rem;
   color: #8A8A8A;
   text-align: center;
@@ -54,21 +54,22 @@
 }
 .lol-alert-action {
   position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(180deg, #C8AA6E 0%, #9B7E3C 100%);
-  border: none;
-  color: #13151C;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #8C7837;
+  border: 1px solid #C8AA6E;
+  color: #C8AA6E;
   font-size: 0.875rem;
-  font-weight: 600;
-  padding: 8px 24px;
+  font-weight: 700;
+  padding: 12px 0;
+  text-align: center;
   cursor: pointer;
 }
 .lol-alert-action:hover {
-  background: linear-gradient(180deg, #B39A5D 0%, #846F2E 100%);
+  background: #7E6F2E;
 }
-`;
+    `;
     document.head.appendChild(style);
 
     // HTML
@@ -97,9 +98,6 @@
     }
 
     document.getElementById('lol-alert-action').onclick = close;
-    bg.onclick = e => {
-      if (e.target === bg) close();
-    };
     document.addEventListener('keydown', function esc(e) {
       if (e.key === 'Escape') {
         close();
