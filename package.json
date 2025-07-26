@@ -1,0 +1,23 @@
+{
+  "name": "lol-alert",
+  "version": "1.0.0",
+  "description": "League of Legends-style alert/modal for web apps",
+  "main": "lolAlert.js",
+  "exports": {
+    "import": "./lolAlert.js",
+    "require": "./lolAlert.js"
+  },
+  "author": "theif0918",
+  "license": "MIT",
+  "keywords": [
+    "alert",
+    "modal",
+    "league-of-legends",
+    "ui",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theif0918/lol-alert"
+  }
+}
