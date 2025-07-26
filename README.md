@@ -1,0 +1,1 @@
+<p align="center"> <img src="https://raw.githubusercontent.com/theif0918/lol-alert/main/assets/lol-alert-demo.png" alt="lol-alert demo" width="450"/> </p> <p align="center"><b>LoL(리그 오브 레전드) 계정 제한 알림창 같은, 깔끔하고 직관적인 웹 alert/모달 라이브러리</b></p>
