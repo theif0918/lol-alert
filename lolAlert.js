@@ -1,5 +1,5 @@
 // League of Legends-style Alert Modal
-// lolAlert.js
+// lolAlert.js 1.0.4
 
 (function (global, factory) {
   if (typeof module === "object" && typeof module.exports === "object") {
@@ -21,66 +21,64 @@
 .lol-alert-bg {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z‑index: 10000;
 }
+
 .lol-alert-box {
   position: relative;
-  background: #13151c;
+  background: linear-gradient(180deg, #0A1F2E 0%, #00152A 100%);
   border: 1px solid #C8AA6E;
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   border-radius: 0;
-  padding: 24px 24px 56px;
+  padding: 24px 24px 64px;
   min-width: 360px;
   max-width: 90vw;
   font-family: 'Noto Sans KR','Malgun Gothic','sans-serif';
 }
+
 .lol-alert-title {
   margin: 0 0 12px;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #f5f3eb;
+  color: #FFFFFF;
   text-align: center;
 }
+
 .lol-alert-message {
   margin: 0 0 32px;
   font-size: 0.9375rem;
   color: #B3B3B3;
+  text-align: center;
   line-height: 1.4;
-  text-align: left;
 }
+
+/* 상단 ‘×’ 버튼 제거 */
 .lol-alert-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: #13151c;
-  border: 1px solid #C8AA6E;
-  color: #f5f3eb;
-  font-size: 0.75rem;
-  padding: 2px 6px;
-  cursor: pointer;
+  display: none;
 }
+
 .lol-alert-action {
   position: absolute;
-  bottom: 8px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
-  background: #C8AA6E;
+  background: linear-gradient(180deg, #F5D06F 0%, #C8AA6E 100%);
   border: none;
-  color: #13151c;
+  color: #13151C;
   font-size: 0.875rem;
   font-weight: 600;
-  padding: 6px 16px;
+  padding: 8px 24px;
   cursor: pointer;
 }
+
 .lol-alert-action:hover {
-  background: #B39A5D;
+  background: linear-gradient(180deg, #ECD47D 0%, #D4AF37 100%);
 }
 `;
-
 
     document.head.appendChild(style);
 
