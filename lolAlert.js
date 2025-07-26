@@ -17,41 +17,72 @@
 
     // CSS
     const style = document.createElement('style');
-    style.textContent = `
-    .lol-alert-bg {
-      position: fixed; left: 0; top: 0; width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.7);
-      z-index: 9999; display: flex;
-      align-items: center; justify-content: center;
-      animation: fadein-lolalert 0.15s;
-    }
-    @keyframes fadein-lolalert { from { opacity: 0; } to { opacity: 1; } }
-    .lol-alert-box {
-      background: #101820; border: 2px solid #85754e;
-      box-shadow: 0 6px 30px #000c; border-radius: 8px;
-      min-width: 360px; max-width: 90vw;
-      padding: 32px 32px 20px 32px;
-      text-align: center; position: relative;
-      font-family: 'Noto Sans KR', 'Malgun Gothic', 'sans-serif';
-    }
-    .lol-alert-title {
-      font-size: 1.6rem; font-weight: bold; color: #fff;
-      margin-bottom: 16px; letter-spacing: -1px;
-    }
-    .lol-alert-message {
-      color: #d8d8d8; font-size: 1.05rem; margin-bottom: 20px;
-      line-height: 1.6;
-    }
-    .lol-alert-message a { color: #44bbf7; text-decoration: underline; }
-    .lol-alert-close {
-      background: #85754e; color: #fff;
-      font-weight: bold; border: none; border-radius: 4px;
-      padding: 8px 32px; font-size: 1.07rem; cursor: pointer;
-      box-shadow: 0 1px 4px #2225;
-      transition: filter .1s;
-    }
-    .lol-alert-close:hover { filter: brightness(1.15); }
-    `;
+style.textContent = `
+.lol-alert-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.72);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadein-lolalert 0.15s;
+}
+@keyframes fadein-lolalert {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.lol-alert-box {
+  background: #171717;
+  border: 2px solid #c8aa6e;
+  box-shadow: 0 8px 32px #000c;
+  border-radius: 0;
+  min-width: 360px;
+  max-width: 92vw;
+  padding: 38px 32px 32px 32px;
+  text-align: center;
+  position: relative;
+  font-family: 'Noto Sans KR','Malgun Gothic','sans-serif';
+}
+.lol-alert-title {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.lol-alert-message {
+  color: #b3b3b3;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.lol-alert-message a {
+  color: #44bbf7;
+  text-decoration: underline;
+}
+.lol-alert-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #c8aa6e;
+  border-radius: 0;
+  padding: 4px 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter .1s;
+}
+.lol-alert-close:hover {
+  filter: brightness(1.15);
+}
+`;
+
     document.head.appendChild(style);
 
     // DOM
