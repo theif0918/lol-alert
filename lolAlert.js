@@ -25,58 +25,62 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: 9999;
 }
 .lol-alert-box {
-  background: #1E2023;
-  border: 1px solid #D4AF37;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  border-radius: 0;
-  padding: 20px 24px 24px;
-  min-width: 320px;
-  max-width: 85vw;
   position: relative;
+  background: #13151c;
+  border: 1px solid #C8AA6E;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  border-radius: 0;
+  padding: 24px 24px 56px;
+  min-width: 360px;
+  max-width: 90vw;
+  font-family: 'Noto Sans KR','Malgun Gothic','sans-serif';
 }
 .lol-alert-title {
-  margin: 0;
-  font-size: 1.125rem;
+  margin: 0 0 12px;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #f5f3eb;
+  text-align: center;
+}
+.lol-alert-message {
+  margin: 0 0 32px;
+  font-size: 0.9375rem;
+  color: #B3B3B3;
+  line-height: 1.4;
   text-align: left;
 }
 .lol-alert-close {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  background: transparent;
-  border: 1px solid #D4AF37;
-  padding: 2px 6px;
+  top: 8px;
+  right: 8px;
+  background: #13151c;
+  border: 1px solid #C8AA6E;
+  color: #f5f3eb;
   font-size: 0.75rem;
-  line-height: 1;
-  color: #FFFFFF;
+  padding: 2px 6px;
   cursor: pointer;
 }
-.lol-alert-message {
-  margin: 12px 0 20px;
-  font-size: 0.9375rem;
-  color: #B3B3B3;
-  line-height: 1.4;
-}
 .lol-alert-action {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 6px 16px;
-  border: 1px solid #D4AF37;
-  background: transparent;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #C8AA6E;
+  border: none;
+  color: #13151c;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #FFFFFF;
+  padding: 6px 16px;
   cursor: pointer;
 }
 .lol-alert-action:hover {
-  background: rgba(212,175,55,0.1);
+  background: #B39A5D;
 }
 `;
+
 
     document.head.appendChild(style);
 
